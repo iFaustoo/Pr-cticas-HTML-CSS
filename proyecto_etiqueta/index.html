@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgb(240, 228, 190)
+        }
+
+        .product-card {
+            background-color: white;
+            max-width: 600px;
+            display: flex;
+            overflow: hidden;
+            border-radius: 15px;
+        }
+
+        .card-image {
+            flex: 1;
+        }
+
+        .card-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+            gap: 15px;
+        }
+
+        .categoria {
+            font-family:'Times New Roman', Times, serif;
+            font-size: 18px;
+            color: gray;
+            letter-spacing: 4px;
+        }
+
+        .precios {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .precio-nuevo {
+            color: #3d8168;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        .precio-viejo {
+            color: gray;
+            text-decoration: line-through;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p {
+            margin: 0;
+            color: gray;
+            line-height: 1.5;
+            font-size: 18px;
+        }
+
+        button {
+            border: none;
+            background-color: #3d8168;
+            color: white;
+            font-weight: bold;
+            border-radius: 8px;
+            padding: 15px;
+            width: 100%;
+            cursor: pointer;
+        }
+
+    </style>
+
+</head>
+
+<body>
+    
+<article class="product-card">
+    <div class="card-image"><img src="https://images.unsplash.com/photo-1594035910387-fea47794261f?ixlib=rb-4.0.3&w=300&q=80" alt="Perfume Gabrielle Chanel"></div>
+    <div class="card-content">
+        <span class="categoria">PERFUME</span>
+        <h1>Gabrielle Essence Eau De Parfum</h1>
+        <p>A floral, solar an voluptuous interpretation composed by Olivier Polge, Perfume-Creator for the house of CHANEL.</p>
+        <div class="precios">
+            <span class="precio-nuevo">$149.99</span>
+            <span class="precio-viejo">$169.99</span>
+        </div>
+        <button>Add to cart</button>
+    </div>
+</article>
+
+</body>
+
+</html>
