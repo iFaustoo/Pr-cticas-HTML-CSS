@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(7, 2, 20);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0;
+            font-family: 'Inter', sans-serif;
+        }
+        
+        .stats-card {
+            display: flex;
+            max-width: 1110px;
+            width: 100%;
+            height: 500px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .half-left {
+            width: 50%;
+            background-color: rgb(36, 19, 68);
+            color: white;
+            padding: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .half-left h1 {
+            font-size: 30px;
+            margin-top: 0;
+        }
+
+        .half-left h1 span {
+            color: #aa5cdb;
+        }
+
+        .half-right {
+            width: 50%;
+            background-color: #aa5cdb;
+        }
+
+        .half-right img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            mix-blend-mode: multiply;
+            opacity: 0.8;
+        }
+
+        .stats-container {
+            display: flex;
+            gap: 50px;
+        }
+
+        .stat-item h3 {
+            margin: 0 0 5px 0;
+            font-size: 24px;
+        }
+
+        .stat-item p {
+            margin: 0;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 12px;
+            letter-spacing: 2px;
+        }
+
+        .description {
+            color: rgba(255, 255, 255, 0.75);
+            line-height: 1.6;
+            margin-bottom: 50px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+        <article class="stats-card">
+            <div class="half-left">
+                <h1>Get <span>insights</span> that help your business grow.</h1>
+                <p class="description">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
+                <div class="stats-container">
+                    
+                    <div class="stat-item">
+                        <h3>10k+</h3>
+                        <p>COMPANIES</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3>314</h3>
+                        <p>TEMPLATES</p>
+                    </div>
+
+                    <div class="stat-item">
+                        <h3>12M+</h3>
+                        <p>QUERIES</p>
+                    </div>
+                </div>
+            </div>
+            <div class="half-right">
+                <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Gente trabajando">
+            </div>
+        </article>
+    
+</body>
+
+</html>
