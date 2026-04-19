@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        body {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            width: 60%;
+            height: 600px;
+            display: flex;
+            justify-content: space-around;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        .orange {
+            flex: 1;
+            background-color: orange;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            align-items: flex-start;
+        }
+
+        .blue {
+            flex: 1;
+            background-color: rgb(41, 119, 129);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            align-items: flex-start;
+        }
+
+        .green {
+            flex: 1;
+            background-color: rgb(5, 54, 24);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 40px;
+            align-items: flex-start;
+        }
+
+        h1 {
+            color: white;
+        }
+
+        p {
+            color: rgb(236, 236, 236);
+        }
+
+        span {
+            color: rgb(236, 236, 236);
+            font-size: 18px;
+            color: gray;
+            font-weight: bold;
+            margin-top: 20px;
+            border-radius: 20px;
+            padding: 10px 20px;
+            background-color: rgb(255, 255, 255);
+        }
+
+        .icono {
+            width: 40px;
+            margin-bottom: 20px;
+        }
+
+        .orange .btn { color: orange; }
+        .blue .btn { color: rgb(41, 119, 129); }
+        .green .btn { color: rgb(5, 54, 24); }
+
+    </style>
+
+</head>
+
+<body>
+    
+    <article class="box">
+
+        <div class="orange">
+            <div class="contenido">
+            <img src="https://www.svgrepo.com/show/447285/car-side.svg" alt="Car Icon" class="icono">
+            <h1>SEDANS</h1>
+            <p>Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city or on your next road trip.</p>
+            </div>
+            <span>Learn More</span>
+        </div>
+
+        <div class="blue">
+            <div class="contenido">
+            <img src="https://www.svgrepo.com/show/447285/car-side.svg" alt="Car Icon" class="icono">
+            <h1>SUVS</h1>
+            <p>Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation and off-road adventures.</p>
+            </div>
+            <span>Learn More</span>
+        </div>
+
+        <div class="green">
+            <div class="contenido">
+            <img src="https://www.svgrepo.com/show/447285/car-side.svg" alt="Car Icon" class="icono">
+            <h1>COMPACTS</h1>
+            <p>Choose a compact for its agility and fuel efficiency. Ideal for navigating the city or exploring the countryside.</p>
+            </div>
+            <span>Learn More</span>
+        </div>
+
+    </article>
+
+</body>
+</html>

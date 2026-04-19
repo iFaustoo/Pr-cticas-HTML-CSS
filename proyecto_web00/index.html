@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .main-header {
+            width: 100%;
+            height: 90px;
+            background-color: rgb(120, 224, 59);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0px 50px;
+        }
+
+        .logo {
+            
+        }
+
+        .links {
+            display: flex;
+            gap: 30px;
+        }
+
+        .links a {
+            color: black;
+            text-decoration: none;
+            font-family: sans-serif;
+            font-weight: bold;
+        }
+
+        .button button {
+            padding: 10px 25px; /* Le da el "grosor" (10px arriba/abajo, 25px a los lados) */
+            background-color: white; /* Fondo blanco puro */
+            color: #4CAF50; /* El color de la letra (cambialo por tu verde exacto si querés) */
+            border: none; /* Esto le saca el borde 3D espantoso de los 90s */
+            border-radius: 20px; /* Lo hace redondeado con forma de píldora */
+            font-weight: bold; /* Letra negrita para que resalte */
+            font-size: 16px; /* Letra un poco más grande */
+            cursor: pointer; /* Fundamental: hace que el mouse se vuelva una 'manito' al tocarlo */
+            transition: transform 0.2s; /* Prepara el botón para un efecto suave */
+        }
+
+        .button button:hover {
+            transform: scale(1.20); /* Hace que el botón crezca un poquitito, da sensación de "clickeable" */
+        }
+
+        .hero {
+            display: flex;
+            padding: 0px 50px;
+            margin-top: 50px;
+        }
+
+        .hero-texto {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .hero-imagen {
+            width: 50%;
+        }
+
+        .hero-imagen img {
+            width:100%;
+            border-radius: 5px;
+        }
+
+        .botones {
+            display: flex;
+            gap: 30px;
+        }
+
+        .habilidades {
+            background-color: #f8f9fa;
+            padding-top: 80px;
+            padding-bottom: 80px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .contenedor-tarjetas {
+            display: flex;
+            gap: 30px;
+            justify-content: space-around;
+        }
+
+        .tarjeta-skill {
+            background-color: white;
+            padding: 30px;
+            border-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <header class="main-header">
+
+        <div class="logo">
+        <h1>FaustoDev</h1>
+        </div>
+
+        <div class="links">
+        <a href="#">Inicio</a>
+        <a href="#">Proyectos</a>
+        <a href="#">Contacto</a>
+        </div>
+
+        <div class="button">
+        <button>Contratame</button>
+        </div>
+
+    </header>
+
+    <section class="hero">
+
+        <div class="hero-texto">
+            <h1>Transformo ideas en código</h1>
+            <p>Soy Fausto, desarrollador web en formación. Construyo interfaces modernas, rápidas y responsivas. ¿Empezamos un proyecto juntos?</p>
+            <div class="botones">
+                <button class="btn-primario">Ver Proyectos</button>
+                <button class="btn-secundario">Contactar</button>
+            </div>
+        </div>
+
+        <div class="hero-imagen">
+            <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Código en pantalla">
+        </div>
+            
+    </section>
+
+    <section class="habilidades">
+    <h2>Mi Stack Tecnológico</h2>
+    
+    <div class="contenedor-tarjetas">
+        
+        <div class="tarjeta-skill">
+            <h3>Frontend</h3>
+            <p>Maquetación moderna y responsiva utilizando HTML semántico y CSS (Flexbox).</p>
+        </div>
+
+        <div class="tarjeta-skill">
+            <h3>Backend</h3>
+            <p>Desarrollo de lógica de negocios y persistencia de datos utilizando C#.</p>
+        </div>
+
+        <div class="tarjeta-skill">
+            <h3>Bases de Datos</h3>
+            <p>Diseño y gestión de datos estructurados mediante BDD relacionales.</p>
+        </div>
+
+    </div>
+    </section>
+
+</body>
+</html>

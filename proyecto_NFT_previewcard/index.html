@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT Preview Card</title>
+
+    <style>
+        /* 1. Reseteo universal para que el padding no rompa los anchos */
+        * {
+            box-sizing: border-box;
+        }
+
+        /* 2. La mesa oscura y el centrado total */
+        body {
+            min-height: 100vh;
+            background-color: rgb(5, 6, 53);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0; /* Saca los márgenes por defecto del body */
+            font-family: "Gill Sans", sans-serif;
+        }
+
+        /* 3. La caja madre */
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: rgb(7, 47, 100);
+            width: 350px;
+            padding: 25px; /* Da aire a todo hacia adentro */
+            border-radius: 15px;
+            /* ¡Sin height fijo! Así se adapta al contenido */
+        }
+
+        /* 4. La imagen principal corregida (ya no afecta al avatar) */
+        .imagen-principal {
+            width: 100%;
+            height: 330px;
+            border-radius: 10px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        /* 5. Textos base */
+        .card h1 {
+            color: white;
+            font-size: 22px;
+            margin: 0 0 15px 0;
+        }
+
+        .descripcion {
+            color: #8bacd9; /* Un gris azulado que queda muy bien */
+            line-height: 1.5;
+            margin: 0 0 20px 0;
+        }
+
+        /* 6. El bloque horizontal de precios y tiempo */
+        .info-cripto {
+            display: flex;
+            justify-content: space-between; /* Uno de cada lado */
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        /* La coma le aplica esto a los dos al mismo tiempo */
+        .precio, .tiempo {
+            display: flex;
+            align-items: center; /* Separa el emoji del texto */
+        }
+
+        .precio {
+            color: cyan;
+            font-weight: bold;
+        }
+
+        .tiempo {
+            color: #8bacd9;
+        }
+
+        /* 7. La línea separadora */
+        .card hr {
+            width: 100%;
+            border: none;
+            border-top: 1px solid #2e405a; /* Línea finita y de color exacto */
+            margin: 0 0 20px 0;
+        }
+
+        /* 8. El creador final */
+        .creador {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .avatar {
+            width: 35px;
+            height: 35px;
+            border-radius: 50%;
+            border: 2px solid white; /* Borde blanco para resaltar */
+        }
+
+        .creador p {
+            color: #8bacd9;
+            margin: 0;
+        }
+
+        .nombre-creador {
+            color: white;
+        }
+    </style>
+
+</head>
+<body>
+
+    <article class="card">
+        <img class="imagen-principal" src="https://images.unsplash.com/photo-1518546305927-5a555bb7020d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Equilibrium #3429">
+        
+        <h1>Equilibrium #3429</h1>
+        <p class="descripcion">Our Equilibrium collection promotes balance and calm.</p>
+        
+        <div class="info-cripto">
+            <div class="precio">
+                <span>💎</span> <span>0.041 ETH</span>
+            </div>
+            <div class="tiempo">
+                <span>⏱</span> <span>3 days left</span>
+            </div>
+        </div>
+
+        <hr>
+        
+        <div class="creador">
+            <img class="avatar" src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&q=80" alt="Avatar">
+            <p>Creation of <span class="nombre-creador">Jules Wyvern</span></p>
+        </div>
+    </article>
+
+</body>
+</html>
