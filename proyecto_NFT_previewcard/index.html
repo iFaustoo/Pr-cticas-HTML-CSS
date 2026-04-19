@@ -6,12 +6,12 @@
     <title>NFT Preview Card</title>
 
     <style>
-        /* 1. Reseteo universal para que el padding no rompa los anchos */
+        
         * {
             box-sizing: border-box;
         }
 
-        /* 2. La mesa oscura y el centrado total */
+        
         body {
             min-height: 100vh;
             background-color: rgb(5, 6, 53);
@@ -22,7 +22,7 @@
             font-family: "Gill Sans", sans-serif;
         }
 
-        /* 3. La caja madre */
+        
         .card {
             display: flex;
             flex-direction: column;
@@ -30,10 +30,10 @@
             width: 350px;
             padding: 25px; /* Da aire a todo hacia adentro */
             border-radius: 15px;
-            /* ¡Sin height fijo! Así se adapta al contenido */
+            
         }
 
-        /* 4. La imagen principal corregida (ya no afecta al avatar) */
+        /* magen principal corregida (ya no afecta al avatar) */
         .imagen-principal {
             width: 100%;
             height: 330px;
@@ -42,7 +42,7 @@
             margin-bottom: 20px;
         }
 
-        /* 5. Textos base */
+        /* textos base */
         .card h1 {
             color: white;
             font-size: 22px;
@@ -50,23 +50,23 @@
         }
 
         .descripcion {
-            color: #8bacd9; /* Un gris azulado que queda muy bien */
+            color: #8bacd9;
             line-height: 1.5;
             margin: 0 0 20px 0;
         }
 
-        /* 6. El bloque horizontal de precios y tiempo */
+        /* bloque horizontal de precios y tiempo */
         .info-cripto {
             display: flex;
-            justify-content: space-between; /* Uno de cada lado */
+            justify-content: space-between; /* uno de cada lado */
             align-items: center;
             margin-bottom: 20px;
         }
 
-        /* La coma le aplica esto a los dos al mismo tiempo */
+        
         .precio, .tiempo {
             display: flex;
-            align-items: center; /* Separa el emoji del texto */
+            align-items: center;
         }
 
         .precio {
@@ -78,15 +78,15 @@
             color: #8bacd9;
         }
 
-        /* 7. La línea separadora */
+        
         .card hr {
             width: 100%;
             border: none;
-            border-top: 1px solid #2e405a; /* Línea finita y de color exacto */
+            border-top: 1px solid #2e405a;
             margin: 0 0 20px 0;
         }
 
-        /* 8. El creador final */
+        
         .creador {
             display: flex;
             align-items: center;
@@ -97,7 +97,7 @@
             width: 35px;
             height: 35px;
             border-radius: 50%;
-            border: 2px solid white; /* Borde blanco para resaltar */
+            border: 2px solid white;
         }
 
         .creador p {
