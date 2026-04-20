@@ -1,0 +1,83 @@
+body {
+    min-height: 100vh;
+    background-color: rgb(242, 254, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.tarjeta-orden {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    max-width: 450px;
+}
+
+.imagen-hero {
+    width: 100%;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.orden-info {
+    padding: 40px;
+    text-align: center;
+}
+
+.selector-plan {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(245, 245, 245);
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.textos-plan {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+button {
+    background-color: rgb(103, 26, 204);
+    color: white;
+    width: 100%;
+    padding: 15px;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    margin-top: 18px;
+}
+
+button:hover {
+    background-color:rgb(159, 76, 214);
+    transform: scale(1.05);
+}
+
+.btn-cancelar {
+    display: block;
+    margin-top: 15px;
+    color: gray;
+}
+
+.link-change {
+    text-decoration: none;
+    color: purple;
+}
+
+@media (max-width: 600px) {
+    .tarjeta-orden {
+        width: 90;
+    }
+
+    .orden-info {
+        padding: 15px;
+    }
+
+    .selector-plan {
+        display: flex;
+        flex-direction: column; /* en caso de que choquen los 3 elementos hijos */
+    }
+}
