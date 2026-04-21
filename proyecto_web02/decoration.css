@@ -112,6 +112,7 @@ body {
 
 .article-heading h1 {
     font-weight: 400;
+    padding: 0px 0px 0px 2%;
 }
 
 .article-heading p {
@@ -155,6 +156,7 @@ body {
 
 .main-section {
     background-color: #fcf9f9;
+    padding-bottom: 30px;
 }
 
 .main-section h2 {
@@ -165,10 +167,182 @@ body {
 
 .sections {
     display: flex;
-    padding: 5% 0px 0px 5%;
+    padding: 5% 5% 0px 5%;
     justify-content: space-between;
-
+    gap: 20px;
 }
 
-/* ---------------------------SECTION NO TERMINADA----------------------- */
+.section-1:hover, .section-2:hover, .section-3:hover, .section-4:hover {
+    transform: scale(1.02)
+}
 
+.section-1 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.section-2 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.section-3 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.section-4 {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.section-1 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 50%;
+}
+
+.section-2 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 50%;
+}
+
+.section-3 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 50%;
+}
+
+.section-4 img {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    height: 50%;
+}
+
+.section-1 span, h4, p {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.section-2 span, h4, p {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.section-3 span, h4, p {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.section-4 span, h4, p {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.section-1 span{
+    color: gray;
+    font-size: 15px;
+}
+
+.section-2 span{
+    color: gray;
+    font-size: 15px;
+}
+
+.section-3 span{
+    color: gray;
+    font-size: 15px;
+}
+
+.section-4 span{
+    color: gray;
+    font-size: 15px;
+}
+
+/* ---------------------------SECTION TERMINADO-------------------------- */
+
+footer {
+    background-color: #2d314d;
+    padding: 60px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.footer-logos span {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.footer-logos img {
+    width: 150px;
+    filter: brightness(0) invert(1);
+}
+
+.acb, .csp {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.acb span, .csp span {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.acb span:hover, .csp span:hover {
+    color: #31d35c;
+}
+
+.footer-end {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 30px;
+}
+
+.footer-end p {
+    color: #9698a6;
+    font-size: 14px;
+}
+
+.footer-end .btn-invitacion {
+    font-size: 16px;
+    padding: 12px 30px;
+}
+
+/* ----------------------------FOOTER TERMINADO---------------------------*/
